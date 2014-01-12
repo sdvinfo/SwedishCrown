@@ -1,7 +1,16 @@
+# My files
+.DS_Store
+.idea
+*.log
+*.pid
+
+
 *.py[cod]
 
 # C extensions
 *.so
+
+
 
 # Packages
 *.egg
