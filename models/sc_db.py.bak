@@ -1,0 +1,48 @@
+# coding: utf8
+
+#field types:
+#    string
+#    text
+#    blob
+#    boolean
+#    integer
+#    double
+#    decimal(n,m)
+#    date
+#    time
+#    datetime
+#    password
+#    upload
+#    reference <table>
+#    list:string
+#    list:integer
+#    list:reference <table>
+#    json
+#    bigint
+#    big-id
+#    big-reference
+
+
+
+db.define_table('house',
+                Field('building','string'),
+                Field('square','decimal(4,2)'),
+                Field('apartment_from','integer'),
+                Field('apartment_till','integer')
+                )
+
+db.define_table('apartment_owner',
+                Field('last_name','string'),
+                Field('middle_name','string'),
+                Field('first_name','string'),
+                Field('quota','decimal(4,2)'),
+                Field('phone','string'),
+                Field('user_id','reference auth_user')
+                )
+
+db.define_table('apartment',
+                Field('owner_id', 'reference apartment_owner'),
+                Field('square','decimal(4,2)'),
+                Field('apartment_number','integer'),
+                Field('house_id','reference house')
+                )
