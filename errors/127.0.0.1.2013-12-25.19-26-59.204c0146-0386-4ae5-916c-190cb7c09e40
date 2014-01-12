@@ -1,0 +1,633 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.SyntaxError'> Set: no tables selected"
+p3
+sS'layer'
+p4
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/models/sc_db.py'
+p5
+sS'code'
+p6
+S"# coding: utf8\n\n#field types:\n#    string\n#    text\n#    blob\n#    boolean\n#    integer\n#    double\n#    decimal(n,m)\n#    date\n#    time\n#    datetime\n#    password\n#    upload\n#    reference <table>\n#    list:string\n#    list:integer\n#    list:reference <table>\n#    json\n#    bigint\n#    big-id\n#    big-reference\n\n\ndb.define_table('house',\n                Field('building', 'string', notnull=True, unique=True, label='\xd0\x9a\xd0\xbe\xd1\x80\xd0\xbf\xd1\x83\xd1\x81'),\n                Field('area_total', 'decimal(4,2)', label='\xd0\x9e\xd0\xb1\xd1\x89\xd0\xb0\xd1\x8f \xd0\xbf\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xb0',\n                      comment='\xd0\xa1\xd1\x83\xd0\xbc\xd0\xbc\xd0\xb0 \xd0\xbf\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd0\xb5\xd0\xb9 \xd0\x96\xd0\x98\xd0\x9b\xd0\xab\xd0\xa5 \xd0\xb8 \xd0\x9d\xd0\x95\xd0\x96\xd0\x98\xd0\x9b\xd0\xab\xd0\xa5, \xd0\xb1\xd0\xb5\xd0\xb7 \xd1\x83\xd1\x87\xd0\xb5\xd1\x82\xd0\xb0 \xd0\xb1\xd0\xb0\xd0\xbb\xd0\xba\xd0\xbe\xd0\xbd\xd0\xbe\xd0\xb2, \xd0\xbb\xd0\xb5\xd1\x81\xd1\x82\xd0\xbd\xd0\xb8\xd1\x86, \xd0\xbf\xd0\xbe\xd0\xb4\xd1\x81\xd0\xbe\xd0\xb1\xd0\xbd\xd1\x8b\xd1\x85 \xd0\xb8 \xd0\xbd\xd0\xb5\xd0\xbe\xd0\xb1\xd0\xbe\xd1\x80\xd1\x83\xd0\xb4\xd0\xbe\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd1\x8b\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9.'),\n                Field('area_residental', 'decimal(4,2)', label='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xb6\xd0\xb8\xd0\xbb\xd1\x8b\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9', comment='\xd0\x91\xd0\xb5\xd0\xb7 \xd1\x83\xd1\x87\xd0\xb5\xd1\x82\xd0\xb0 \xd0\xb1\xd0\xb0\xd0\xbb\xd0\xba\xd0\xbe\xd0\xbd\xd0\xbe\xd0\xb2'),\n                Field('area_commercial', 'decimal(4,2)', label='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xbd\xd0\xb5\xd0\xb6\xd0\xb8\xd0\xbb\xd1\x8b\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9',\n                      comment='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbc\xd0\xb5\xd1\x80\xd1\x87\xd0\xb5\xd1\x81\xd0\xba\xd0\xb8\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9, \xd0\xba\xd0\xbb\xd0\xb0\xd0\xb4\xd0\xbe\xd0\xb2\xd0\xbe\xd0\xba, \xd0\xba\xd0\xbe\xd0\xbb\xd1\x8f\xd1\x81\xd0\xbe\xd1\x87\xd0\xbd\xd1\x8b\xd1\x85, \xd0\xb4\xd0\xb2\xd0\xbe\xd1\x80\xd0\xbd\xd0\xb8\xd1\x86\xd0\xba\xd0\xb8\xd1\x85, \xd0\x93\xd0\xa0\xd0\xa9, \xd0\x98\xd0\xa2\xd0\x9f \xd0\xb8 \xd0\xbf\xd1\x80. '),\n                Field('area_balconies', 'decimal(4,2)', label='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xb1\xd0\xb0\xd0\xbb\xd0\xba\xd0\xbe\xd0\xbd\xd0\xbe\xd0\xb2',\n                      comment='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xbb\xd0\xbe\xd0\xb4\xd0\xb6\xd0\xb8\xd0\xb9, \xd0\xb1\xd0\xb0\xd0\xbb\xd0\xba\xd0\xbe\xd0\xbd\xd0\xbe\xd0\xb2, \xd0\xb2\xd0\xb5\xd1\x80\xd0\xb0\xd0\xbd\xd0\xb4 \xd0\xb8 \xd1\x82\xd0\xb5\xd1\x80\xd0\xb0\xd1\x81\xd1\x81 \xd1\x81 \xd0\xba\xd0\xbe\xd1\x8d\xd1\x84\xd1\x84\xd0\xb8\xd1\x86\xd0\xb8\xd0\xb5\xd0\xbd\xd1\x82\xd0\xb0\xd0\xbc\xd0\xb8.'),\n                Field('area_stairs', 'decimal(4,2)', label='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xbb\xd0\xb5\xd1\x81\xd1\x82\xd0\xbd\xd0\xb8\xd1\x86',\n                      comment='\xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c \xd0\xbb\xd0\xb5\xd1\x81\xd1\x82\xd0\xbd\xd0\xb8\xd1\x86, \xd0\xbb\xd0\xb8\xd1\x84\xd1\x82\xd0\xbe\xd0\xb2, \xd0\xba\xd0\xbe\xd1\x80\xd0\xb8\xd0\xb4\xd0\xbe\xd1\x80\xd0\xbe\xd0\xb2.'),\n                Field('area_unequipped', 'decimal(4,2)', label='\xd0\x9d\xd0\xb5\xd0\xbe\xd0\xb1\xd0\xbe\xd1\x80\xd1\x83\xd0\xb4\xd0\xbe\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f \xd0\xbf\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c',\n                      comment='\xd0\x9a\xd1\x82\xd0\xbe-\xd0\xbd\xd0\xb8\xd0\xb1\xd1\x83\xd0\xb4\xd1\x8c \xd0\xb7\xd0\xbd\xd0\xb0\xd0\xb5\xd1\x82 \xd1\x87\xd1\x82\xd0\xbe \xd1\x8d\xd1\x82\xd0\xbe \xd1\x82\xd0\xb0\xd0\xba\xd0\xbe\xd0\xb5?'),\n                Field('flat_from', 'integer', label='\xd0\x9d\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x80\xd0\xb0 \xd0\xba\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80 \xd0\xa1'),\n                Field('flat_till', 'integer', label='\xd0\x9d\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x80\xd0\xb0 \xd0\xba\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80 \xd0\x9f\xd0\x9e'),\n                Field('pib_measurement_date', 'date', label='\xd0\x94\xd0\xb0\xd1\x82\xd0\xb0 \xd0\xb2\xd0\xb5\xd0\xb4\xd0\xbe\xd0\xbc\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8 \xd0\xbe\xd0\xb1\xd0\xbc\xd0\xb5\xd1\x80\xd0\xbe\xd0\xb2 \xd0\x9f\xd0\x98\xd0\x91')\n)\n\n# \xd0\x92\xd0\xb8\xd0\xb4 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f\ndb.define_table('type_of_room',\n                Field('name','string',label='\xd0\x92\xd0\xb8\xd0\xb4',comment='\xd0\x92\xd0\xb8\xd0\xb4 \xd0\xbe\xd0\xb1\xd1\x8a\xd0\xb5\xd0\xba\xd1\x82\xd0\xb0 \xd0\xbd\xd0\xb5\xd0\xb4\xd0\xb2\xd0\xb8\xd0\xb6\xd0\xb8\xd0\xbc\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8'),\n                )\n\n# \xd0\xa1\xd0\xbe\xd0\xb1\xd1\x81\xd1\x82\xd0\xb2\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xb8\xd0\xba \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f\ndb.define_table('person',\n                Field('last_name','string'),\n                Field('first_name','string'),\n                Field('middle_name','string'),\n                Field('phone','string'),\n                Field('user_id','reference auth_user'),\n                )\n\n# \xd0\x9a\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80\xd0\xb0, \xd0\xba\xd0\xbb\xd0\xb0\xd0\xb4\xd0\xbe\xd0\xb2\xd0\xba\xd0\xb0, \xd0\xba\xd0\xbe\xd0\xbc.\xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5 \xd0\xb8\xd0\xbb\xd0\xb8 \xd1\x87\xd1\x82\xd0\xbe-\xd0\xbb\xd0\xb8\xd0\xb1\xd0\xbe \xd0\xb5\xd1\x89\xd0\xb5?\ndb.define_table('room',\n                Field('room_num', 'string', label='\xd0\x9d\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x80'),\n                Field('room_type', 'reference type_of_room', label='\xd0\x92\xd0\xb8\xd0\xb4', requires=IS_IN_DB(db,'type_of_room.id', '%(name)s',zero=None),default=1),\n                Field('area', 'decimal(4,2)'),\n                Field('house', 'reference house', label=T('House'), requires=IS_IN_DB(db, 'house.id', '%(building)s', zero='\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd0\xba\xd0\xbe\xd1\x80\xd0\xbf\xd1\x83\xd1\x81 \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xb0')),\n                Field('room_name', 'string', default=str('room_num'+' - '+'house.building')),\n                )\n\n# \xd0\xa1\xd0\xbe\xd0\xb1\xd1\x81\xd1\x82\xd0\xb2\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\ndb.define_table('ownership',\n                Field('person', 'reference person', label='\xd0\xa1\xd0\xbe\xd0\xb1\xd1\x81\xd1\x82\xd0\xb2\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xb8\xd0\xba', requires=IS_IN_DB(db,'person.id', '%(last_name)s %(first_name)s %(middle_name)s', zero='\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd1\x81\xd0\xbe\xd0\xb1\xd1\x81\xd1\x82\xd0\xb2\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xb8\xd0\xba\xd0\xb0 (\xd0\xb2\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe, \xd1\x81\xd0\xb5\xd0\xb1\xd1\x8f?)')),\n                Field('room', 'reference room', label='\xd0\x9e\xd0\xb1\xd1\x8a\xd0\xb5\xd0\xba\xd1\x82 \xd0\xbd\xd0\xb5\xd0\xb4\xd0\xb2\xd0\xb8\xd0\xb6\xd0\xb8\xd0\xbc\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8', requires=IS_IN_DB(db, 'room.id', '%(room_name)s', zero='\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd0\xbe\xd0\xb1\xd1\x8a\xd0\xb5\xd0\xba\xd1\x82 \xd0\xbd\xd0\xb5\xd0\xb4\xd0\xb2\xd0\xb8\xd0\xb6\xd0\xb8\xd0\xbc\xd0\xbe\xd1\x81\xd1\x82\xd0\xb8')),\n                Field('quota', 'decimal(4,2)', label='\xd0\x94\xd0\xbe\xd0\xbb\xd1\x8f', comment='\xd0\x94\xd0\xbe\xd0\xbb\xd1\x8f \xd1\x8d\xd1\x82\xd0\xbe\xd0\xb3\xd0\xbe \xd1\x81\xd0\xbe\xd0\xb1\xd1\x81\xd1\x82\xd0\xb2\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xb8\xd0\xba\xd0\xb0 \xd0\xb2 %', default=100),\n                Field('ownership_date', 'date', label='\xd0\x94\xd0\xb0\xd1\x82\xd0\xb0', comment='\xd0\x94\xd0\xb0\xd1\x82\xd0\xb0 \xd0\xbe\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x8f \xd0\xb2 \xd1\x81\xd0\xbe\xd0\xb1\xd1\x81\xd1\x82\xd0\xb2\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c', requires=IS_DATE(format=T('%d.%m.%Y'))),\n                )\n\npersons_and_spaces = db((db.person.id == db.ownership.person) & (db.room.id == db.ownership.room))\n\n\n## ============ \xd0\x94\xd0\xbb\xd1\x8f \xd0\xb2\xd1\x8b\xd0\xb1\xd0\xbe\xd1\x80\xd0\xba\xd0\xb8 \xd0\xb8\xd0\xb7 \xd0\xbe\xd0\xb1\xd1\x89\xd0\xb5\xd0\xb9 \xd1\x82\xd0\xb0\xd0\xb1\xd0\xbb\xd0\xb8\xd1\x86\xd1\x8b: =================\n# for row in persons_and_things.select():\n#    print row.person.name, row.thing.name\n## ============================================================\n\n\n# \xd0\xa1\xd1\x82\xd0\xb0\xd1\x82\xd1\x8c\xd1\x8f \xd1\x81\xd0\xbc\xd0\xb5\xd1\x82\xd1\x8b\ndb.define_table('budget_item',\n                Field('name', 'string', label='\xd0\xa1\xd1\x82\xd0\xb0\xd1\x82\xd1\x8c\xd1\x8f'),\n                Field('item_type', 'integer', label='\xd0\xa2\xd0\xb8\xd0\xbf', requires=IS_IN_SET({'1':'\xd0\xa0\xd0\xb0\xd1\x81\xd1\x85\xd0\xbe\xd0\xb4','2':'\xd0\x94\xd0\xbe\xd1\x85\xd0\xbe\xd0\xb4'},zero=None),default=1),\n                Field('tarif_live', 'decimal(6,2)',label='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 (\xd0\xb6\xd0\xb8\xd0\xbb\xd1\x8b\xd0\xb5)', comment='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 \xd0\xb7\xd0\xb0 \xd0\xbc\xd0\xb5\xd1\x82\xd1\x80 \xd0\xb4\xd0\xbb\xd1\x8f \xd0\xb6\xd0\xb8\xd0\xbb\xd1\x8b\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9'),\n                Field('tarif_unlive', 'decimal(6,2)',label='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 (\xd0\xbd\xd0\xb5\xd0\xb6\xd0\xb8\xd0\xbb\xd1\x8b\xd0\xb5)', comment='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 \xd0\xb7\xd0\xb0 \xd0\xbc\xd0\xb5\xd1\x82\xd1\x80 \xd0\xb4\xd0\xbb\xd1\x8f \xd0\xbd\xd0\xb5\xd0\xb6\xd0\xb8\xd0\xbb\xd1\x8b\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9'),\n                Field('tarif_parking', 'decimal(6,2)',label='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 (\xd0\xbe\xd0\xb1\xd1\x89\xd0\xb8\xd0\xb5)', comment='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 \xd0\xb7\xd0\xb0 \xd0\xbc\xd0\xb5\xd1\x82\xd1\x80 \xd0\xb4\xd0\xbb\xd1\x8f \xd0\xbf\xd0\xb0\xd1\x80\xd0\xba\xd0\xb8\xd0\xbd\xd0\xb3\xd0\xb0'),\n                Field('date_from','date',label='\xd0\x94\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82 \xd1\x81', comment='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 \xd1\x83\xd1\x82\xd0\xb2\xd0\xb5\xd1\x80\xd0\xb6\xd0\xb4\xd0\xb5\xd0\xbd \xd1\x81 \xd0\xb4\xd0\xb0\xd1\x82\xd1\x8b'),\n                Field('date_to','date',label='\xd0\x94\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82 \xd0\xbf\xd0\xbe', comment='\xd0\xa2\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84 \xd1\x83\xd1\x82\xd0\xb2\xd0\xb5\xd1\x80\xd0\xb6\xd0\xb4\xd0\xb5\xd0\xbd \xd0\xbf\xd0\xbe \xd0\xb4\xd0\xb0\xd1\x82\xd1\x83'),\n                auth.signature\n                )\n\n\ndb.define_table('budget',\n                Field('item', 'reference budget_item', label='\xd0\xa1\xd1\x82\xd0\xb0\xd1\x82\xd1\x8c\xd1\x8f', requires=IS_IN_DB(db,'budget_item.id','%(name)s',zero='\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd0\xbe\xd0\xb4\xd0\xbd\xd1\x83 \xd0\xb8\xd0\xb7 \xd1\x81\xd1\x82\xd0\xb0\xd1\x82\xd0\xb5\xd0\xb9 \xd0\xa1\xd0\xbc\xd0\xb5\xd1\x82\xd1\x8b')),\n                Field('sum_plan', 'decimal(10,2)',label='\xd0\xa1\xd1\x83\xd0\xbc\xd0\xbc\xd0\xb0 (\xd0\xbf\xd0\xbb\xd0\xb0\xd0\xbd)', comment='\xd0\x97\xd0\xb0\xd0\xbf\xd0\xbb\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x80\xd0\xbe\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f \xd1\x81\xd1\x83\xd0\xbc\xd0\xbc\xd0\xb0 \xd0\xbf\xd0\xbe \xd1\x81\xd1\x82\xd0\xb0\xd1\x82\xd1\x8c\xd0\xb5'),\n                Field('sum_fact', 'decimal(10,2)',label='\xd0\xa1\xd1\x83\xd0\xbc\xd0\xbc\xd0\xb0 (\xd1\x84\xd0\xb0\xd0\xba\xd1\x82)', comment='\xd0\xa4\xd0\xb0\xd0\xba\xd1\x82\xd0\xb8\xd1\x87\xd0\xb5\xd1\x81\xd0\xba\xd0\xb0\xd1\x8f \xd1\x81\xd1\x83\xd0\xbc\xd0\xbc\xd0\xb0 \xd0\xbf\xd0\xbe \xd1\x81\xd1\x82\xd0\xb0\xd1\x82\xd1\x8c\xd0\xb5'),\n                Field('saldo','decimal(10,2)', label='\xd0\xa1\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xb4\xd0\xbe', comment='\xd0\xa0\xd0\xb0\xd0\xb7\xd0\xbd\xd0\xb8\xd1\x86\xd0\xb0 \xd0\xbc\xd0\xb5\xd0\xb6\xd0\xb4\xd1\x83 \xd0\xbf\xd0\xbb\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x80\xd1\x83\xd0\xb5\xd0\xbc\xd1\x8b\xd0\xbc \xd0\xb8 \xd1\x84\xd0\xb0\xd0\xba\xd1\x82\xd0\xb8\xd1\x87\xd0\xb5\xd1\x81\xd0\xba\xd0\xb8\xd0\xbc \xd0\xb4\xd0\xbe\xd1\x85\xd0\xbe\xd0\xb4\xd0\xbe\xd0\xbc/\xd1\x80\xd0\xb0\xd1\x81\xd1\x85\xd0\xbe\xd0\xb4\xd0\xbe\xd0\xbc'),\n                Field('date_from','date',label='\xd0\x94\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82 \xd1\x81', comment='\xd0\xa1\xd0\xbc\xd0\xb5\xd1\x82\xd0\xb0 \xd1\x83\xd1\x82\xd0\xb2\xd0\xb5\xd1\x80\xd0\xb6\xd0\xb4\xd0\xb5\xd0\xbd\xd0\xb0 \xd1\x81 \xd0\xb4\xd0\xb0\xd1\x82\xd1\x8b'),\n                Field('date_to','date',label='\xd0\x94\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82 \xd0\xbf\xd0\xbe', comment='\xd0\xa1\xd0\xbc\xd0\xb5\xd1\x82\xd0\xb0 \xd0\xb4\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd1\x83\xd0\xb5\xd1\x82 \xd0\xbf\xd0\xbe \xd0\xb4\xd0\xb0\xd1\x82\xd1\x83'),\n                )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n## =================================================================\n##\n##  \xd0\x92\xd1\x81\xd0\xbf\xd0\xbe\xd0\xbc\xd0\xbe\xd0\xb3\xd0\xb0\xd1\x82\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xb0\xd1\x8f \xd1\x84\xd1\x83\xd0\xbd\xd0\xba\xd1\x86\xd0\xb8\xd1\x8f \xd0\xb4\xd0\xbb\xd1\x8f \xd0\xb7\xd0\xb0\xd0\xb3\xd1\x80\xd1\x83\xd0\xb7\xd0\xba\xd0\xb8 \xd1\x81\xd0\xbf\xd1\x80\xd0\xb0\xd0\xb2\xd0\xbe\xd1\x87\xd0\xbd\xd0\xb8\xd0\xba\xd0\xb0 \xd0\xba\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80 \xd0\xb8\xd0\xb7\n##  csv-\xd1\x84\xd0\xb0\xd0\xb9\xd0\xbb\xd0\xb0.\n##  \xd0\xa4\xd0\xb0\xd0\xb9\xd0\xbb \xd0\xb4\xd0\xbe\xd0\xbb\xd0\xb6\xd0\xb5\xd0\xbd \xd0\xb1\xd1\x8b\xd1\x82\xd1\x8c \xd0\xb2 \xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x82\xd0\xb5: \xd0\x9d\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x80_\xd0\x9a\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80\xd1\x8b ; \xd0\x9f\xd0\xbb\xd0\xbe\xd1\x89\xd0\xb0\xd0\xb4\xd1\x8c_\xd0\x9a\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80\xd1\x8b\n##\n##  \xd0\x9f\xd1\x80\xd0\xb8 \xd0\xb7\xd0\xb0\xd0\xb3\xd1\x80\xd1\x83\xd0\xb7\xd0\xba\xd0\xb5 \xd0\xbd\xd0\xb5\xd0\xbe\xd0\xb1\xd1\x85\xd0\xbe\xd0\xb4\xd0\xb8\xd0\xbc\xd0\xbe \xd1\x83\xd0\xba\xd0\xb0\xd0\xb7\xd0\xb0\xd1\x82\xd1\x8c ID \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xb0 \xd0\xb2 \xd0\xba\xd0\xbe\xd1\x82\xd0\xbe\xd1\x80\xd1\x8b\xd0\xb9 \xd0\xbc\xd1\x8b \xd0\xb7\xd0\xb0\xd0\xb3\xd1\x80\xd1\x83\xd0\xb6\xd0\xb0\xd0\xb5\xd0\xbc \xd0\xba\xd0\xb2\xd0\xb0\xd1\x80\xd1\x82\xd0\xb8\xd1\x80\xd1\x8b\n##\n## =================================================================\n#\n# def upload_appartments(f):\n#     import csv,pprint\n#     infile = open(f,'r')\n#     tab=[]\n#     for row in csv.reader(infile,delimiter=';'):\n#         tab.append(row)\n#     infile.close()\n#     for row in db(db.house.id==4).select():   # <--- ID \xd0\xba\xd0\xbe\xd1\x80\xd0\xbf\xd1\x83\xd1\x81\xd0\xb0 \xd0\xb4\xd0\xbe\xd0\xbc\xd0\xb0 !!!\n#         house = row\n#     # house = db(db.house.id==1).select()\n#     for i in range(len(tab)):\n#         print 'House='+house.building+' ID='+str(house.id)+' app='+str(tab[i][0])+'  square='+str(tab[i][1])\n#         db.space.insert(space_num=tab[i][0], area=tab[i][1], house_id=house.id)\n#     db.commit()\n\n# upload_appartments('/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/static/tmp/12E.csv')\n\n## =================================================================\n\ndef update_rooms():\n    rooms = db(db.room).select()\n    for room in rooms:\n        print room\n        row = db(db.room.id==room.id).select().first()\n        house = db(db.house.id==row.house).select().first()\n        room_type = db(db.type_of_room==room.room_type).select().first()\n        print row\n        row.room_name='\xd0\x9a\xd0\xbe\xd1\x80\xd0\xbf\xd1\x83\xd1\x81: '+str(house.building)+' - '+str(room_type)+' \xe2\x84\x96: '+str(room.room_num)\n        print row.room_name\n        row.update_record()\n\nupdate_rooms()\n"
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__getslice__'
+p12
+S"<method-wrapper '__getslice__' of exceptions.SyntaxError object>"
+p13
+sS'text'
+p14
+S'None'
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of exceptions.SyntaxError object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of exceptions.SyntaxError object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of exceptions.SyntaxError object>'
+p23
+sS'__init__'
+p24
+S"<method-wrapper '__init__' of exceptions.SyntaxError object>"
+p25
+sS'__setattr__'
+p26
+S"<method-wrapper '__setattr__' of exceptions.SyntaxError object>"
+p27
+sS'__reduce_ex__'
+p28
+S'<built-in method __reduce_ex__ of exceptions.SyntaxError object>'
+p29
+sS'__new__'
+p30
+S'<built-in method __new__ of type object>'
+p31
+sS'__format__'
+p32
+S'<built-in method __format__ of exceptions.SyntaxError object>'
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.SyntaxError'>"
+p35
+sS'filename'
+p36
+S'None'
+p37
+sS'lineno'
+p38
+S'None'
+p39
+sS'msg'
+p40
+S"'Set: no tables selected'"
+p41
+sS'__doc__'
+p42
+S"'Invalid syntax.'"
+p43
+sS'__getitem__'
+p44
+S"<method-wrapper '__getitem__' of exceptions.SyntaxError object>"
+p45
+sS'__setstate__'
+p46
+S'<built-in method __setstate__ of exceptions.SyntaxError object>'
+p47
+sS'__getattribute__'
+p48
+S"<method-wrapper '__getattribute__' of exceptions.SyntaxError object>"
+p49
+sS'print_file_and_line'
+p50
+S'None'
+p51
+sS'args'
+p52
+S"('Set: no tables selected',)"
+p53
+sS'__subclasshook__'
+p54
+S'<built-in method __subclasshook__ of type object>'
+p55
+sS'offset'
+p56
+S'None'
+p57
+sS'__unicode__'
+p58
+S'<built-in method __unicode__ of exceptions.SyntaxError object>'
+p59
+sS'__delattr__'
+p60
+S"<method-wrapper '__delattr__' of exceptions.SyntaxError object>"
+p61
+sS'__repr__'
+p62
+S"<method-wrapper '__repr__' of exceptions.SyntaxError object>"
+p63
+sS'__hash__'
+p64
+S"<method-wrapper '__hash__' of exceptions.SyntaxError object>"
+p65
+ssS'evalue'
+p66
+S'Set: no tables selected'
+p67
+sS'request'
+p68
+cgluon.html
+XML_unpickle
+p69
+(S's\xd8f\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>SwedishCrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>db</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>appadmin</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-5f52df3f-6669-4416-a408-48e052e61bcd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_flashyweb</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-4c9f4ae3-b21e-479b-a5f5-e2131771f8f5<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_swedishcrown</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-3c7d7c85-8cfb-4168-9448-45e7f01449cd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">CONTENT_LENGTH</td><td style="vertical-align:top;">:</td><td><div>296</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">CONTENT_TYPE</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=---------------------------236787888406835725100098027</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONTENT_LENGTH</td><td style="vertical-align:top;">:</td><td><div>296</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONTENT_TYPE</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=---------------------------236787888406835725100098027</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_flashyweb=127.0.0.1-4c9f4ae3-b21e-479b-a5f5-e2131771f8f5; session_id_welcome=127.0.0.1-3c7d7c85-8cfb-4168-9448-45e7f01449cd; session_id_admin=127.0.0.1-5f52df3f-6669-4416-a408-48e052e61bcd; session_id_swedishcrown=127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/SwedishCrown/appadmin/select/db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:15.0) Gecko/20100101 Firefox/15.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/appadmin/select/db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>61539</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>POST</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>macbook13-sdv.lan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/admin/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/welcome/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1020b6680: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.0.251&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;macbook13-sdv.lan&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">content_length</td><td style="vertical-align:top;">:</td><td><div>296</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">content_type</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=---------------------------236787888406835725100098027</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_content_length</td><td style="vertical-align:top;">:</td><td><div>296</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_content_type</td><td style="vertical-align:top;">:</td><td><div>multipart/form-data; boundary=---------------------------236787888406835725100098027</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_flashyweb=127.0.0.1-4c9f4ae3-b21e-479b-a5f5-e2131771f8f5; session_id_welcome=127.0.0.1-3c7d7c85-8cfb-4168-9448-45e7f01449cd; session_id_admin=127.0.0.1-5f52df3f-6669-4416-a408-48e052e61bcd; session_id_swedishcrown=127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/SwedishCrown/appadmin/select/db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:15.0) Gecko/20100101 Firefox/15.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>macbook13-sdv.lan</div></td></tr><tr><td><div>192.168.0.251</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/appadmin/select/db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>61539</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>POST</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/appadmin/select/db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>macbook13-sdv.lan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.8.2-stable+timestamp.2013.11.28.13.54.07</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x1002bf1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x102046870&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x10694f250&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x1002bf1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x102046870&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x10694f250&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>select</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/admin/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/welcome/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1020b6680: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.0.251&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;macbook13-sdv.lan&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>macbook13-sdv.lan</div></td></tr><tr><td><div>192.168.0.251</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.8.2-stable+timestamp.2013.11.28.13.54.07</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 25, 19, 26, 59, 219940)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div>db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/appadmin/select/db</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 25, 15, 26, 59, 219955)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uuid</td><td style="vertical-align:top;">:</td><td><div>SwedishCrown/127.0.0.1.2013-12-25.19-26-59.204c0146-0386-4ae5-916c-190cb7c09e40</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x10bb799d0&gt;</div></td></tr></table></div>'
+tRp70
+sS'frames'
+p71
+(lp72
+(dp73
+S'file'
+p74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/restricted.py'
+p75
+sS'dump'
+p76
+(dp77
+S'environment'
+p78
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, 'CENTER': <class 'gluon.html.CENTER'>, ...}"
+p79
+sS'ccode'
+p80
+S'<code object <module> at 0x10ac1ad30, file "/Use...lications/SwedishCrown/models/sc_db.py", line 26>'
+p81
+ssS'lnum'
+p82
+I217
+sS'lines'
+p83
+(dp84
+I212
+S'    try:'
+p85
+sI213
+S'        if isinstance(code, types.CodeType):'
+p86
+sI214
+S'            ccode = code'
+p87
+sI215
+S'        else:'
+p88
+sI216
+S'            ccode = compile2(code, layer)'
+p89
+sI217
+S'        exec ccode in environment'
+p90
+sI218
+S'    except HTTP:'
+p91
+sI219
+S'        raise'
+p92
+sI220
+S'    except RestrictedError:'
+p93
+sI221
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p94
+ssS'call'
+p95
+S"(code='# coding: utf8\\n\\n#field types:\\n#    string\\n#    t...name\\n        row.update_record()\\n\\nupdate_rooms()\\n', environment={'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, 'CENTER': <class 'gluon.html.CENTER'>, ...}, layer='/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/models/sc_db.py')"
+p96
+sS'func'
+p97
+S'restricted'
+p98
+sa(dp99
+g74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/models/sc_db.py'
+p100
+sg76
+(dp101
+S'update_rooms'
+p102
+S'<function update_rooms>'
+p103
+ssg82
+I161
+sg83
+(dp104
+I160
+S''
+sI161
+S'update_rooms()'
+p105
+sI152
+S'        print room'
+p106
+sI153
+S'        row = db(db.room.id==room.id).select().first()'
+p107
+sI154
+S'        house = db(db.house.id==row.house).select().first()'
+p108
+sI155
+S'        room_type = db(db.type_of_room==room.room_type).select().first()'
+p109
+sI156
+S'        print row'
+p110
+sI157
+S"        row.room_name='\xd0\x9a\xd0\xbe\xd1\x80\xd0\xbf\xd1\x83\xd1\x81: '+str(house.building)+' - '+str(room_type)+' \xe2\x84\x96: '+str(room.room_num)"
+p111
+sI158
+S'        print row.room_name'
+p112
+sI159
+S'        row.update_record()'
+p113
+ssg95
+S'()'
+p114
+sg97
+S'<module>'
+p115
+sa(dp116
+g74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/models/sc_db.py'
+p117
+sg76
+(dp118
+S'room'
+p119
+S"<Row {'area': 47.5, 'house': 1L, 'room_name': '1... 1', 'id': 1L, 'room_num': '1', 'room_type': 1L}>"
+p120
+sS').select'
+p121
+S'None'
+p122
+sS'global db'
+p123
+S'<DAL uri="sqlite://storage.sqlite">'
+p124
+sS'room.room_type'
+p125
+S'1L'
+p126
+sS'room_type'
+p127
+S'undefined'
+p128
+sS').first'
+p129
+g128
+sS'db.type_of_room'
+p130
+S'<Table type_of_room (id,name)>'
+p131
+ssg82
+I155
+sg83
+(dp132
+I150
+S'    rooms = db(db.room).select()'
+p133
+sI151
+S'    for room in rooms:'
+p134
+sI152
+S'        print room'
+p135
+sI153
+S'        row = db(db.room.id==room.id).select().first()'
+p136
+sI154
+S'        house = db(db.house.id==row.house).select().first()'
+p137
+sI155
+S'        room_type = db(db.type_of_room==room.room_type).select().first()'
+p138
+sI156
+S'        print row'
+p139
+sI157
+S"        row.room_name='\xd0\x9a\xd0\xbe\xd1\x80\xd0\xbf\xd1\x83\xd1\x81: '+str(house.building)+' - '+str(room_type)+' \xe2\x84\x96: '+str(room.room_num)"
+p140
+sI158
+S'        print row.room_name'
+p141
+sI159
+S'        row.update_record()'
+p142
+ssg95
+S'()'
+p143
+sg97
+S'update_rooms'
+p144
+sa(dp145
+g74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py'
+p146
+sg76
+(dp147
+S'self.query'
+p148
+S'False'
+p149
+sS'adapter.select'
+p150
+S'<bound method SQLiteAdapter.select of <gluon.dal.SQLiteAdapter object>>'
+p151
+sS'fields'
+p152
+S'[]'
+p153
+sS'adapter'
+p154
+S'<gluon.dal.SQLiteAdapter object>'
+p155
+sS'attributes'
+p156
+g21
+sS'self'
+p157
+S'<Set 0>'
+p158
+ssg82
+I10335
+sg83
+(dp159
+I10336
+S''
+sI10337
+S'    def nested_select(self,*fields,**attributes):'
+p160
+sI10338
+S'        return Expression(self.db,self._select(*fields,**attributes))'
+p161
+sI10339
+S''
+sI10330
+S"                                    attributes.get('join',None),"
+p162
+sI10331
+S"                                    attributes.get('left',None),"
+p163
+sI10332
+S"                                    attributes.get('orderby',None),"
+p164
+sI10333
+S"                                    attributes.get('groupby',None))"
+p165
+sI10334
+S'        fields = adapter.expand_all(fields, tablenames)'
+p166
+sI10335
+S'        return adapter.select(self.query,fields,attributes)'
+p167
+ssg95
+S'(self=<Set 0>, *fields=[], **attributes={})'
+p168
+sg97
+S'select'
+p169
+sa(dp170
+g74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py'
+p171
+sg76
+(dp172
+S'fields'
+p173
+S'[]'
+p174
+sS'self'
+p175
+S'<gluon.dal.SQLiteAdapter object>'
+p176
+sS').select'
+p177
+S'<bound method SQLiteAdapter.select of <gluon.dal.SQLiteAdapter object>>'
+p178
+sS'attributes'
+p179
+g21
+sS'global SQLiteAdapter'
+p180
+S"<class 'gluon.dal.SQLiteAdapter'>"
+p181
+sS'query'
+p182
+g149
+sS'builtinsuper'
+p183
+S"<type 'super'>"
+p184
+ssg82
+I2388
+sg83
+(dp185
+I2383
+S'        Note that the entire database, rather than one record, is locked'
+p186
+sI2384
+S'        (it will be locked eventually anyway by the following UPDATE).'
+p187
+sI2385
+S'        """'
+p188
+sI2386
+S"        if attributes.get('for_update', False) and not 'cache' in attributes:"
+p189
+sI2387
+S"            self.execute('BEGIN IMMEDIATE TRANSACTION;')"
+p190
+sI2388
+S'        return super(SQLiteAdapter, self).select(query, fields, attributes)'
+p191
+sI2389
+S''
+sI2390
+S'class SpatiaLiteAdapter(SQLiteAdapter):'
+p192
+sI2391
+S"    drivers = ('sqlite3','sqlite2')"
+p193
+sI2392
+S''
+ssg95
+S'(self=<gluon.dal.SQLiteAdapter object>, query=False, fields=[], attributes={})'
+p194
+sg97
+g169
+sa(dp195
+g74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py'
+p196
+sg76
+(dp197
+S'self._select'
+p198
+S'<bound method SQLiteAdapter._select of <gluon.dal.SQLiteAdapter object>>'
+p199
+sS'fields'
+p200
+S'[]'
+p201
+sS'self'
+p202
+S'<gluon.dal.SQLiteAdapter object>'
+p203
+sS'sql'
+p204
+g128
+sS'query'
+p205
+g149
+sS'attributes'
+p206
+g21
+ssg82
+I1818
+sg83
+(dp207
+I1813
+S''
+sI1814
+S'    def select(self, query, fields, attributes):'
+p208
+sI1815
+S'        """'
+p209
+sI1816
+S'        Always returns a Rows object, possibly empty.'
+p210
+sI1817
+S'        """'
+p211
+sI1818
+S'        sql = self._select(query, fields, attributes)'
+p212
+sI1819
+S"        cache = attributes.get('cache', None)"
+p213
+sI1820
+S"        if cache and attributes.get('cacheable',False):"
+p214
+sI1821
+S"            del attributes['cache']"
+p215
+sI1822
+S'            (cache_model, time_expire) = cache'
+p216
+ssg95
+S'(self=<gluon.dal.SQLiteAdapter object>, query=False, fields=[], attributes={})'
+p217
+sg97
+g169
+sa(dp218
+g74
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py'
+p219
+sg76
+(dp220
+S'builtinSyntaxError'
+p221
+S"<type 'exceptions.SyntaxError'>"
+p222
+ssg82
+I1657
+sg83
+(dp223
+I1652
+S'            for tablename in tables(field):'
+p224
+sI1653
+S'                if not tablename in tablenames:'
+p225
+sI1654
+S'                    tablenames.append(tablename)'
+p226
+sI1655
+S''
+sI1656
+S'        if len(tablenames) < 1:'
+p227
+sI1657
+S"            raise SyntaxError('Set: no tables selected')"
+p228
+sI1658
+S'        def colexpand(field):'
+p229
+sI1659
+S'            return self.expand(field, colnames=True)'
+p230
+sI1660
+S'        self._colnames = map(colexpand, fields)'
+p231
+sI1661
+S'        def geoexpand(field):'
+p232
+ssg95
+S'(self=<gluon.dal.SQLiteAdapter object>, query=False, fields=[], attributes={})'
+p233
+sg97
+S'_select'
+p234
+sasS'pyver'
+p235
+S'Python 2.7.5: /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python (prefix: /Library/Frameworks/Python.framework/Versions/2.7)'
+p236
+sS'session'
+p237
+g69
+(S's\x12\n\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>b4abef50-77ba-4d69-bf2f-a1059d30798f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 25, 19, 24, 5, 453820)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remember</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>sdvinfo@gmail.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>\xd0\x94\xd0\xbc\xd0\xb8\xd1\x82\xd1\x80\xd0\xb8\xd0\xb9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>1L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>\xd0\xa1\xd0\xb5\xd1\x80\xd0\xb5\xd0\xb6\xd0\xb8\xd0\xbd</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">1</td><td style="vertical-align:top;">:</td><td><div>user_1</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.room.id&gt;0</div></td></tr></table></div>'
+tRp238
+sS'etype'
+p239
+S"<type 'exceptions.SyntaxError'>"
+p240
+sS'date'
+p241
+S'Wed Dec 25 19:26:59 2013'
+p242
+sS'response'
+p243
+g69
+(S'sO$\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x10692e6c0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_swedishcrown</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="brand" data-w2p_disable_with="default" href="/SwedishCrown/default/index"><b><span>S</span>wedish<span>C</span>rown <span>CMS</span></b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>\xd0\x9e \xd1\x81\xd0\xb8\xd1\x81\xd1\x82\xd0\xb5\xd0\xbc\xd0\xb5</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x98\xd0\xbd\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f \xd0\xbe \xd0\xa2\xd0\xa1\xd0\x96</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/about</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>\xd0\x9e\xd0\xb1\xd1\x89\xd0\xb0\xd1\x8f \xd0\xb8\xd0\xbd\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/common_info</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x98\xd0\xbd\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f \xd0\xbe \xd1\x82\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84\xd0\xb0\xd1\x85</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/tariff_info</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\xa3\xd0\xbf\xd1\x80\xd0\xb0\xd0\xb2\xd0\xbb\xd1\x8f\xd1\x8e\xd1\x89\xd0\xb0\xd1\x8f \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x8f</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/management_company_info</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x94\xd0\xbe\xd0\xba\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82\xd1\x8b</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/documents</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\xa4\xd0\xbe\xd1\x82\xd0\xbe\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb5\xd1\x80\xd0\xb5\xd1\x8f</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/photos</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\xa4\xd0\xbe\xd1\x80\xd1\x83\xd0\xbc</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/forum</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x9b\xd0\xb8\xd1\x87\xd0\xbd\xd1\x8b\xd0\xb9 \xd0\xba\xd0\xb0\xd0\xb1\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x82</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/profile/personal_page</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Dmitriy Serezhin &lt;sdvinfo@gmail.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>CMS for homeowners association Swedish Crown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>\xd0\xa2\xd0\xa1\xd0\x96, CMS, \xd0\x96\xd0\x9a\xd0\xa5</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^appadmin/\\w+\\.py$</div></td></tr><tr><td><div>^appadmin/select/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_swedishcrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/sessions/127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609&#x27;, mode &#x27;rb+&#x27; at 0x107595ed0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/sessions/127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>da3b193e50bba0cfe7dadfd823b8943d</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_swedishcrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>SwedishCrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Swedishcrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>appadmin/select.html</div></td></tr></table></div>'
+tRp244
+sS'locals'
+p245
+(dp246
+S'tables'
+p247
+S'<bound method SQLiteAdapter.tables of <gluon.dal.SQLiteAdapter object>>'
+p248
+sS'tablenames_for_common_filters'
+p249
+S'[]'
+p250
+sS'fields'
+p251
+S'[]'
+p252
+sS'self'
+p253
+S'<gluon.dal.SQLiteAdapter object>'
+p254
+sS'tablenames'
+p255
+S'[]'
+p256
+sS'query'
+p257
+g149
+sS'attributes'
+p258
+g21
+sS'args_get'
+p259
+S'<built-in method get of dict object>'
+p260
+sssS'traceback'
+p261
+S'Traceback (most recent call last):\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/restricted.py", line 217, in restricted\n    exec ccode in environment\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/models/sc_db.py", line 161, in <module>\n    update_rooms()\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/models/sc_db.py", line 155, in update_rooms\n    room_type = db(db.type_of_room==room.room_type).select().first()\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py", line 10335, in select\n    return adapter.select(self.query,fields,attributes)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py", line 2388, in select\n    return super(SQLiteAdapter, self).select(query, fields, attributes)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py", line 1818, in select\n    sql = self._select(query, fields, attributes)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py", line 1657, in _select\n    raise SyntaxError(\'Set: no tables selected\')\nSyntaxError: Set: no tables selected\n'
+p262
+s.

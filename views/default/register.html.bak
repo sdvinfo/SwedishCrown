@@ -1,0 +1,26 @@
+{{extend 'layout.html'}}
+<h1>Это шаблон default/register.html</h1>
+ 
+<div id="register_form">
+ 
+Please fill the form
+    
+{{=form.custom.begin}}
+<div id="user_main">
+      First name:
+    {{=form.custom.label['first_name']}}
+      <div>{{=form.custom.widget.first_name}}</div>
+ 
+      Last name:
+      <div>{{=form.custom.widget.last_name}}</div>
+ 
+      Gender:
+      <div>
+      {{=form.custom.widget.gender}}
+      </div>
+</div>
+{{=form.custom.end}}
+
+ 
+</div>
+{{=BEAUTIFY(response._vars)}}

@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+
+<h3>{{=message}}</h3>
+
+        <table class='table table-bordered'>
+            <tr>
+                <td>
+                    <span class="icon-time"></span>
+                    {{=A('Ввод данных со счетчиков электричества', _href=URL('default','index')) }}
+                </td>
+                <td>
+                    <span class="icon-home"></span>
+                    {{=A('Информация о ваших объектах недвижимости в комплексе', _href=URL('profile','rooms')) }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon-barcode"></span>
+                    {{=A('Распечатать квитанцию на коммунальные платежи', _href=URL('default','index')) }}
+                </td>
+                <td>
+                    <span class="icon-list-alt"></span>
+                    {{=A('Информация о смете ТСЖ', _href=URL('default','index')) }}
+                </td>
+            </tr>
+
+        </table>
+
+
+
+

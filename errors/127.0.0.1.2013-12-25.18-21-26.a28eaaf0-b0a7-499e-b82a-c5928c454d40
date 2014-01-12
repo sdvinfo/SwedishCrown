@@ -1,0 +1,796 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AttributeError'> 'Table' object has no attribute 'room.house'"
+p3
+sS'layer'
+p4
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/controllers/profile.py'
+p5
+sS'code'
+p6
+S'# coding: utf8\n# \xd0\xbf\xd0\xbe\xd0\xbf\xd1\x80\xd0\xbe\xd0\xb1\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x82\xd1\x8c \xd1\x87\xd1\x82\xd0\xbe-\xd0\xbb\xd0\xb8\xd0\xb1\xd0\xbe \xd0\xb2\xd0\xb8\xd0\xb4\xd0\xb0\ndef index(): \n    return dict(message="hello from profile.py")\n\n\n@auth.requires_login()\ndef personal_page():\n    response.title="\xd0\x9b\xd0\xb8\xd1\x87\xd0\xbd\xd1\x8b\xd0\xb9 \xd0\xba\xd0\xb0\xd0\xb1\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x82"\n    message=\'\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd0\xbd\xd0\xb5\xd0\xbe\xd0\xb1\xd1\x85\xd0\xbe\xd0\xb4\xd0\xb8\xd0\xbc\xd1\x8b\xd0\xb5 \xd0\x92\xd0\xb0\xd0\xbc \xd0\xb4\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd0\xb8\xd1\x8f:\'\n    return locals()\n\n\n@auth.requires_login()\ndef rooms():\n    response.title = "\xd0\xa1\xd0\xbf\xd0\xb8\xd1\x81\xd0\xbe\xd0\xba \xd0\xb2\xd0\xb0\xd1\x88\xd0\xb8\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9"\n    # form = crud.select(db.ownership)\n    grid = SQLFORM.grid(db.ownership)\n    return locals()\n\nresponse._vars=response._caller(rooms)\n'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.AttributeError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.AttributeError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.AttributeError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.AttributeError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.AttributeError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.AttributeError object>'
+p23
+sS'args'
+p24
+S'("\'Table\' object has no attribute \'room.house\'",)'
+p25
+sS'__reduce__'
+p26
+S'<built-in method __reduce__ of exceptions.AttributeError object>'
+p27
+sS'__str__'
+p28
+S"<method-wrapper '__str__' of exceptions.AttributeError object>"
+p29
+sS'__format__'
+p30
+S'<built-in method __format__ of exceptions.AttributeError object>'
+p31
+sS'__getattribute__'
+p32
+S"<method-wrapper '__getattribute__' of exceptions.AttributeError object>"
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.AttributeError'>"
+p35
+sS'__unicode__'
+p36
+S'<built-in method __unicode__ of exceptions.AttributeError object>'
+p37
+sS'__delattr__'
+p38
+S"<method-wrapper '__delattr__' of exceptions.AttributeError object>"
+p39
+sS'__subclasshook__'
+p40
+S'<built-in method __subclasshook__ of type object>'
+p41
+sS'__repr__'
+p42
+S"<method-wrapper '__repr__' of exceptions.AttributeError object>"
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.AttributeError object>'
+p47
+sS'__doc__'
+p48
+S"'Attribute not found.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.AttributeError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"'Table' object has no attribute 'room.house'"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\x82b\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>SwedishCrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>new</div></td></tr><tr><td><div>ownership</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>profile</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-5f52df3f-6669-4416-a408-48e052e61bcd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_flashyweb</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-4c9f4ae3-b21e-479b-a5f5-e2131771f8f5<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_swedishcrown</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-3c7d7c85-8cfb-4168-9448-45e7f01449cd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_flashyweb=127.0.0.1-4c9f4ae3-b21e-479b-a5f5-e2131771f8f5; session_id_welcome=127.0.0.1-3c7d7c85-8cfb-4168-9448-45e7f01449cd; session_id_admin=127.0.0.1-5f52df3f-6669-4416-a408-48e052e61bcd; session_id_swedishcrown=127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/SwedishCrown/profile/rooms?_signature=6644e57726357ea4fb21f470262d768fdf291d6b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:15.0) Gecko/20100101 Firefox/15.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/profile/rooms/new/ownership</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div>_signature=b3e57e51a5b90ef00feca35d0c01e5916d553545</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>61274</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>macbook13-sdv.lan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/admin/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/welcome/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1020b6680: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.0.251&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;macbook13-sdv.lan&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_flashyweb=127.0.0.1-4c9f4ae3-b21e-479b-a5f5-e2131771f8f5; session_id_welcome=127.0.0.1-3c7d7c85-8cfb-4168-9448-45e7f01449cd; session_id_admin=127.0.0.1-5f52df3f-6669-4416-a408-48e052e61bcd; session_id_swedishcrown=127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/SwedishCrown/profile/rooms?_signature=6644e57726357ea4fb21f470262d768fdf291d6b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:15.0) Gecko/20100101 Firefox/15.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>macbook13-sdv.lan</div></td></tr><tr><td><div>192.168.0.251</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/profile/rooms/new/ownership</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div>_signature=b3e57e51a5b90ef00feca35d0c01e5916d553545</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>61274</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/profile/rooms/new/ownership?_signature=b3e57e51a5b90ef00feca35d0c01e5916d553545</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>macbook13-sdv.lan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.8.2-stable+timestamp.2013.11.28.13.54.07</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x1002bf1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x102046870&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x1032a7bd0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x1002bf1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x102046870&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x1032a7bd0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>rooms</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/admin/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/welcome/&#x27;, &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1020b6680: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.0.251&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;macbook13-sdv.lan&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;scheduler_groups&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>macbook13-sdv.lan</div></td></tr><tr><td><div>192.168.0.251</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.8.2-stable+timestamp.2013.11.28.13.54.07</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 25, 18, 21, 26, 313516)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div>new/ownership</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/SwedishCrown/profile/rooms/new/ownership</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 25, 14, 21, 26, 313530)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uuid</td><td style="vertical-align:top;">:</td><td><div>SwedishCrown/127.0.0.1.2013-12-25.18-21-26.a28eaaf0-b0a7-499e-b82a-c5928c454d40</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x10a9ce550&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, 'CENTER': <class 'gluon.html.CENTER'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0x10abc39b0, file "/Use...ons/SwedishCrown/controllers/profile.py", line 3>'
+p69
+ssS'lnum'
+p70
+I217
+sS'lines'
+p71
+(dp72
+I212
+S'    try:'
+p73
+sI213
+S'        if isinstance(code, types.CodeType):'
+p74
+sI214
+S'            ccode = code'
+p75
+sI215
+S'        else:'
+p76
+sI216
+S'            ccode = compile2(code, layer)'
+p77
+sI217
+S'        exec ccode in environment'
+p78
+sI218
+S'    except HTTP:'
+p79
+sI219
+S'        raise'
+p80
+sI220
+S'    except RestrictedError:'
+p81
+sI221
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p82
+ssS'call'
+p83
+S"(code='# coding: utf8\\n# \\xd0\\xbf\\xd0\\xbe\\xd0\\xbf\\xd1\\x80\\xd0\\xbe\\xd0\\xb1\\xd0\\xbe\\xd0\\xb2\\xd0\\xb0\\xd1\\x82\\xd1\\x8c \\xd1\\x87\\xd1\\x82\\xd0\\xbe-\\xd0...locals()\\n\\nresponse._vars=response._caller(rooms)\\n', environment={'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, 'CENTER': <class 'gluon.html.CENTER'>, ...}, layer='/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/controllers/profile.py')"
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/controllers/profile.py'
+p88
+sg64
+(dp89
+sg70
+I21
+sg71
+(dp90
+I10
+S"    message='\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd0\xbd\xd0\xb5\xd0\xbe\xd0\xb1\xd1\x85\xd0\xbe\xd0\xb4\xd0\xb8\xd0\xbc\xd1\x8b\xd0\xb5 \xd0\x92\xd0\xb0\xd0\xbc \xd0\xb4\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd0\xb8\xd1\x8f:'"
+p91
+sI11
+S'    return locals()'
+p92
+sI12
+S''
+sI13
+S''
+sI14
+S'@auth.requires_login()'
+p93
+sI15
+S'def rooms():'
+p94
+sI16
+S'    response.title = "\xd0\xa1\xd0\xbf\xd0\xb8\xd1\x81\xd0\xbe\xd0\xba \xd0\xb2\xd0\xb0\xd1\x88\xd0\xb8\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9"'
+p95
+sI17
+S'    # form = crud.select(db.ownership)'
+p96
+sI18
+S'    grid = SQLFORM.grid(db.ownership)'
+p97
+sI19
+S'    return locals()'
+p98
+ssg83
+S'()'
+p99
+sg85
+S'<module>'
+p100
+sa(dp101
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/globals.py'
+p102
+sg64
+(dp103
+S'self'
+p104
+S'undefined'
+p105
+sS'f'
+S'<function rooms>'
+p106
+ssg70
+I372
+sg71
+(dp107
+I367
+S'        self.menu = []             # used by the default view layout'
+p108
+sI368
+S'        self.files = []            # used by web2py_ajax.html'
+p109
+sI369
+S'        self.generic_patterns = []  # patterns to allow generic views'
+p110
+sI370
+S"        self.delimiters = ('{{', '}}')"
+p111
+sI371
+S'        self._vars = None'
+p112
+sI372
+S'        self._caller = lambda f: f()'
+p113
+sI373
+S'        self._view_environment = None'
+p114
+sI374
+S'        self._custom_commit = None'
+p115
+sI375
+S'        self._custom_rollback = None'
+p116
+sI376
+S''
+ssg83
+S'(f=<function rooms>)'
+p117
+sg85
+S'<lambda>'
+p118
+sa(dp119
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/tools.py'
+p120
+sg64
+(dp121
+S'action'
+p122
+S'<function rooms>'
+p123
+sS'a'
+S'()'
+p124
+sS'b'
+g45
+ssg70
+I3239
+sg71
+(dp125
+I3234
+S'                    flag = condition'
+p126
+sI3235
+S'                if not flag:'
+p127
+sI3236
+S'                    current.session.flash = self.messages.access_denied'
+p128
+sI3237
+S'                    return call_or_redirect('
+p129
+sI3238
+S'                        self.settings.on_failed_authorization)'
+p130
+sI3239
+S'                return action(*a, **b)'
+p131
+sI3240
+S'            f.__doc__ = action.__doc__'
+p132
+sI3241
+S'            f.__name__ = action.__name__'
+p133
+sI3242
+S'            f.__dict__.update(action.__dict__)'
+p134
+sI3243
+S'            return f'
+p135
+ssg83
+S'(*a=(), **b={})'
+p136
+sg85
+S'f'
+sa(dp137
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/controllers/profile.py'
+p138
+sg64
+(dp139
+S'SQLFORM.grid'
+p140
+S'<function grid>'
+p141
+sS'global SQLFORM'
+p142
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p143
+sS'grid'
+p144
+g105
+sS'global db'
+p145
+S'<DAL uri="sqlite://storage.sqlite">'
+p146
+sS'db.ownership'
+p147
+S'<Table ownership (id,person,room,quota,ownership_date)>'
+p148
+ssg70
+I18
+sg71
+(dp149
+I10
+S"    message='\xd0\x92\xd1\x8b\xd0\xb1\xd0\xb5\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5 \xd0\xbd\xd0\xb5\xd0\xbe\xd0\xb1\xd1\x85\xd0\xbe\xd0\xb4\xd0\xb8\xd0\xbc\xd1\x8b\xd0\xb5 \xd0\x92\xd0\xb0\xd0\xbc \xd0\xb4\xd0\xb5\xd0\xb9\xd1\x81\xd1\x82\xd0\xb2\xd0\xb8\xd1\x8f:'"
+p150
+sI11
+S'    return locals()'
+p151
+sI12
+S''
+sI13
+S''
+sI14
+S'@auth.requires_login()'
+p152
+sI15
+S'def rooms():'
+p153
+sI16
+S'    response.title = "\xd0\xa1\xd0\xbf\xd0\xb8\xd1\x81\xd0\xbe\xd0\xba \xd0\xb2\xd0\xb0\xd1\x88\xd0\xb8\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9"'
+p154
+sI17
+S'    # form = crud.select(db.ownership)'
+p155
+sI18
+S'    grid = SQLFORM.grid(db.ownership)'
+p156
+sI19
+S'    return locals()'
+p157
+ssg83
+S'()'
+p158
+sg85
+S'rooms'
+p159
+sa(dp160
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/sqlhtml.py'
+p161
+sg64
+(dp162
+S'global SQLFORM'
+p163
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p164
+sS'create_form'
+p165
+S'None'
+p166
+sS'sqlformargs'
+p167
+S"{'_class': 'web2py_form', 'formstyle': 'table3cols', 'ignore_rw': False}"
+p168
+sS'table'
+p169
+S'<Table ownership (id,person,room,quota,ownership_date)>'
+p170
+ssg70
+I2050
+sg71
+(dp171
+I2048
+S'            sqlformargs.update(formargs)'
+p172
+sI2049
+S'            sqlformargs.update(createargs)'
+p173
+sI2050
+S'            create_form = SQLFORM(table, **sqlformargs)'
+p174
+sI2051
+S'            create_form.process(formname=formname,'
+p175
+sI2052
+S'                                next=referrer,'
+p176
+sI2053
+S'                                onvalidation=onvalidation,'
+p177
+sI2054
+S'                                onfailure=onfailure,'
+p178
+sI2045
+S'            table = db[request.args[-1]]'
+p179
+sI2046
+S'            sqlformargs = dict(ignore_rw=ignore_rw, formstyle=formstyle,'
+p180
+sI2047
+S"                               _class='web2py_form')"
+p181
+ssg83
+S"(query=<Table ownership (id,person,room,quota,ownership_date)>, fields=[<gluon.dal.Field object>, <gluon.dal.Field object>, <gluon.dal.Field object>, <gluon.dal.Field object>, <gluon.dal.Field object>], field_id=<gluon.dal.Field object>, left=None, headers={}, orderby=None, groupby=None, searchable=True, sortable=True, paginate=20, deletable=True, editable=True, details=True, selectable=None, create=True, csv=True, links=None, links_in_grid=True, upload=<function <lambda>>, args=[], user_signature=True, maxtextlengths={}, maxtextlength=20, onvalidation=None, onfailure=None, oncreate=None, onupdate=None, ondelete=None, sorter_icons=(<gluon.html.XML object>, <gluon.html.XML object>), ui={'button': 'button btn', 'buttonadd': 'icon plus icon-plus', 'buttonback': 'icon leftarrow icon-arrow-left', 'buttondelete': 'icon trash icon-trash', 'buttonedit': 'icon pen icon-pencil', 'buttonexport': 'icon downarrow icon-download', 'buttontable': 'icon rightarrow icon-arrow-right', 'buttontext': 'buttontext button', 'buttonview': 'icon magnifier icon-zoom-in', 'content': '', ...}, showbuttontext=True, _class='web2py_grid', formname='web2py_grid', search_widget='default', ignore_rw=False, formstyle='table3cols', exportclasses=None, formargs={}, createargs={}, editargs={}, viewargs={}, selectable_submit_button='Submit', buttons_placement='right', links_placement='right', noconfirm=False, cache_count=None, client_side_delete=False, ignore_common_filters=None)"
+p182
+sg85
+S'grid'
+p183
+sa(dp184
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/sqlhtml.py'
+p185
+sg64
+(dp186
+S'default'
+p187
+S'None'
+p188
+sS'self.widgets.options.widget'
+p189
+S"<bound method type.widget of <class 'gluon.sqlhtml.OptionsWidget'>>"
+p190
+sS'self'
+p191
+S'<gluon.sqlhtml.SQLFORM object>'
+p192
+sS'inp'
+p193
+S'<gluon.html.SELECT object>'
+p194
+sS'self.widgets'
+p195
+S"<Storage {'multiple': <class 'gluon.sqlhtml.Mult...ss 'gluon.sqlhtml.OptionsWidget'>, 'blob': None}>"
+p196
+sS'field'
+p197
+S'<gluon.dal.Field object>'
+p198
+sS'self.widgets.options'
+p199
+S"<class 'gluon.sqlhtml.OptionsWidget'>"
+p200
+ssg70
+I1145
+sg71
+(dp201
+I1140
+S"                    inpval = 'checked'"
+p202
+sI1141
+S'                else:'
+p203
+sI1142
+S"                    inpval = ''"
+p204
+sI1143
+S'            elif OptionsWidget.has_options(field):'
+p205
+sI1144
+S'                if not field.requires.multiple:'
+p206
+sI1145
+S'                    inp = self.widgets.options.widget(field, default)'
+p207
+sI1146
+S'                else:'
+p208
+sI1147
+S'                    inp = self.widgets.multiple.widget(field, default)'
+p209
+sI1148
+S'                if fieldname in keepopts:'
+p210
+sI1149
+S"                    inpval = TAG[''](*inp.components)"
+p211
+ssg83
+S"(self=<gluon.sqlhtml.SQLFORM object>, table=<Table ownership (id,person,room,quota,ownership_date)>, record=None, deletable=False, linkto=None, upload=None, fields=['id', 'person', 'room', 'quota', 'ownership_date'], labels=None, col3={}, submit_button='Submit', delete_label='Check to delete', showid=True, readonly=False, comments=True, keepopts=[], ignore_rw=False, record_id=None, formstyle='table3cols', buttons=['submit'], separator=': ', **attributes={'_class': 'web2py_form'})"
+p212
+sg85
+g50
+sa(dp213
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/sqlhtml.py'
+p214
+sg64
+(dp215
+S'].options'
+p216
+g105
+sS'requires'
+p217
+S'[<gluon.validators.IS_IN_DB object>]'
+p218
+sS'options'
+p219
+g105
+ssg70
+I270
+sg71
+(dp220
+I265
+S'        requires = field.requires'
+p221
+sI266
+S'        if not isinstance(requires, (list, tuple)):'
+p222
+sI267
+S'            requires = [requires]'
+p223
+sI268
+S'        if requires:'
+p224
+sI269
+S"            if hasattr(requires[0], 'options'):"
+p225
+sI270
+S'                options = requires[0].options()'
+p226
+sI271
+S'            else:'
+p227
+sI272
+S'                raise SyntaxError('
+p228
+sI273
+S"                    'widget cannot determine options of %s' % field)"
+p229
+sI274
+S'        opts = [OPTION(v, _value=k) for (k, v) in options]'
+p230
+ssg83
+S"(cls=<class 'gluon.sqlhtml.OptionsWidget'>, field=<gluon.dal.Field object>, value=None, **attributes={})"
+p231
+sg85
+S'widget'
+p232
+sa(dp233
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/validators.py'
+p234
+sg64
+(dp235
+S'self'
+p236
+S'<gluon.validators.IS_IN_DB object>'
+p237
+sS'self.build_set'
+p238
+S'<bound method IS_IN_DB.build_set of <gluon.validators.IS_IN_DB object>>'
+p239
+ssg70
+I559
+sg71
+(dp240
+I554
+S'            self.labels = [self.label % r for r in records]'
+p241
+sI555
+S'        else:'
+p242
+sI556
+S'            self.labels = [self.label(r) for r in records]'
+p243
+sI557
+S''
+sI558
+S'    def options(self, zero=True):'
+p244
+sI559
+S'        self.build_set()'
+p245
+sI560
+S'        items = [(k, self.labels[i]) for (i, k) in enumerate(self.theset)]'
+p246
+sI561
+S'        if self.sort:'
+p247
+sI562
+S'            items.sort(options_sorter)'
+p248
+sI563
+S'        if zero and not self.zero is None and not self.multiple:'
+p249
+ssg83
+S'(self=<gluon.validators.IS_IN_DB object>, zero=True)'
+p250
+sg85
+S'options'
+p251
+sa(dp252
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/validators.py'
+p253
+sg64
+(dp254
+S'self.fields'
+p255
+S"['room_num', 'room.house', 'id']"
+p256
+sS'fields'
+p257
+g105
+sS'k'
+S"'room.house'"
+p258
+sS'self'
+p259
+S'<gluon.validators.IS_IN_DB object>'
+p260
+sS'table'
+p261
+S'<Table room (id,room_num,room_type,area,house)>'
+p262
+ssg70
+I535
+sg71
+(dp263
+I530
+S'    def build_set(self):'
+p264
+sI531
+S'        table = self.dbset.db[self.ktable]'
+p265
+sI532
+S"        if self.fields == 'all':"
+p266
+sI533
+S'            fields = [f for f in table]'
+p267
+sI534
+S'        else:'
+p268
+sI535
+S'            fields = [table[k] for k in self.fields]'
+p269
+sI536
+S'        ignore = (FieldVirtual,FieldMethod)'
+p270
+sI537
+S'        fields = filter(lambda f:not isinstance(f,ignore), fields)'
+p271
+sI538
+S"        if self.dbset.db._dbname != 'gae':"
+p272
+sI539
+S'            orderby = self.orderby or reduce(lambda a, b: a | b, fields)'
+p273
+ssg83
+S'(self=<gluon.validators.IS_IN_DB object>)'
+p274
+sg85
+S'build_set'
+p275
+sa(dp276
+g62
+S'/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py'
+p277
+sg64
+(dp278
+S'builtinstr'
+p279
+S"<type 'str'>"
+p280
+sS'self'
+p281
+S'<Table room (id,room_num,room_type,area,house)>'
+p282
+sS'global ogetattr'
+p283
+S"<slot wrapper '__getattribute__' of 'object' objects>"
+p284
+sS'key'
+p285
+S"'room.house'"
+p286
+ssg70
+I8817
+sg71
+(dp287
+I8812
+S'            query = self._build_query(key)'
+p288
+sI8813
+S'            return self._db(query).select(limitby=(0,1), orderby_on_limitby=False).first()'
+p289
+sI8814
+S"        elif str(key).isdigit() or 'google' in DRIVERS and isinstance(key, Key):"
+p290
+sI8815
+S'            return self._db(self._id == key).select(limitby=(0,1), orderby_on_limitby=False).first()'
+p291
+sI8816
+S'        elif key:'
+p292
+sI8817
+S'            return ogetattr(self, str(key))'
+p293
+sI8818
+S''
+sI8819
+S'    def __call__(self, key=DEFAULT, **kwargs):'
+p294
+sI8820
+S"        for_update = kwargs.get('_for_update',False)"
+p295
+sI8821
+S"        if '_for_update' in kwargs: del kwargs['_for_update']"
+p296
+ssg83
+S"(self=<Table room (id,room_num,room_type,area,house)>, key='room.house')"
+p297
+sg85
+g20
+sasS'pyver'
+p298
+S'Python 2.7.5: /Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python (prefix: /Library/Frameworks/Python.framework/Versions/2.7)'
+p299
+sS'session'
+p300
+g57
+(S's\x12\n\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>b4abef50-77ba-4d69-bf2f-a1059d30798f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2013, 12, 25, 18, 16, 3, 766554)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remember</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>sdvinfo@gmail.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>\xd0\x94\xd0\xbc\xd0\xb8\xd1\x82\xd1\x80\xd0\xb8\xd0\xb9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>1L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>\xd0\xa1\xd0\xb5\xd1\x80\xd0\xb5\xd0\xb6\xd0\xb8\xd0\xbd</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">1</td><td style="vertical-align:top;">:</td><td><div>user_1</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.room.id&gt;0</div></td></tr></table></div>'
+tRp301
+sS'etype'
+p302
+S"<type 'exceptions.AttributeError'>"
+p303
+sS'date'
+p304
+S'Wed Dec 25 18:21:26 2013'
+p305
+sS'response'
+p306
+g57
+(S'sh$\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x10ad1aa78&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_swedishcrown</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="brand" data-w2p_disable_with="default" href="/SwedishCrown/default/index"><b><span>S</span>wedish<span>C</span>rown <span>CMS</span></b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>\xd0\x9e \xd1\x81\xd0\xb8\xd1\x81\xd1\x82\xd0\xb5\xd0\xbc\xd0\xb5</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x98\xd0\xbd\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f \xd0\xbe \xd0\xa2\xd0\xa1\xd0\x96</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/about</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>\xd0\x9e\xd0\xb1\xd1\x89\xd0\xb0\xd1\x8f \xd0\xb8\xd0\xbd\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/common_info</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x98\xd0\xbd\xd1\x84\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd1\x86\xd0\xb8\xd1\x8f \xd0\xbe \xd1\x82\xd0\xb0\xd1\x80\xd0\xb8\xd1\x84\xd0\xb0\xd1\x85</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/tariff_info</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\xa3\xd0\xbf\xd1\x80\xd0\xb0\xd0\xb2\xd0\xbb\xd1\x8f\xd1\x8e\xd1\x89\xd0\xb0\xd1\x8f \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x8f</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/management_company_info</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x94\xd0\xbe\xd0\xba\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82\xd1\x8b</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/documents</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\xa4\xd0\xbe\xd1\x82\xd0\xbe\xd0\xb3\xd0\xb0\xd0\xbb\xd0\xb5\xd1\x80\xd0\xb5\xd1\x8f</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/photos</div></td></tr><tr><td><div>[]</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\xa4\xd0\xbe\xd1\x80\xd1\x83\xd0\xbc</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/default/forum</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>\xd0\x9b\xd0\xb8\xd1\x87\xd0\xbd\xd1\x8b\xd0\xb9 \xd0\xba\xd0\xb0\xd0\xb1\xd0\xb8\xd0\xbd\xd0\xb5\xd1\x82</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/SwedishCrown/profile/personal_page</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Dmitriy Serezhin &lt;sdvinfo@gmail.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>CMS for homeowners association Swedish Crown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>\xd0\xa2\xd0\xa1\xd0\x96, CMS, \xd0\x96\xd0\x9a\xd0\xa5</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^profile/\\w+\\.py$</div></td></tr><tr><td><div>^profile/rooms/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_swedishcrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/sessions/127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609&#x27;, mode &#x27;rb+&#x27; at 0x10acdf270&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/sessions/127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>0e8e51f8d2dcb8a3ffe039359cacda0f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-80a0f552-7b76-4aca-8e3d-8a116e49f609</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_swedishcrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>SwedishCrown</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>\xd0\xa1\xd0\xbf\xd0\xb8\xd1\x81\xd0\xbe\xd0\xba \xd0\xb2\xd0\xb0\xd1\x88\xd0\xb8\xd1\x85 \xd0\xbf\xd0\xbe\xd0\xbc\xd0\xb5\xd1\x89\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>profile/rooms.html</div></td></tr></table></div>'
+tRp307
+sS'locals'
+p308
+(dp309
+S'self'
+p310
+S'<Table room (id,room_num,room_type,area,house)>'
+p311
+sS'key'
+p312
+S"'room.house'"
+p313
+sssS'traceback'
+p314
+S'Traceback (most recent call last):\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/restricted.py", line 217, in restricted\n    exec ccode in environment\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/controllers/profile.py", line 21, in <module>\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/globals.py", line 372, in <lambda>\n    self._caller = lambda f: f()\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/tools.py", line 3239, in f\n    return action(*a, **b)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/applications/SwedishCrown/controllers/profile.py", line 18, in rooms\n    grid = SQLFORM.grid(db.ownership)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/sqlhtml.py", line 2050, in grid\n    create_form = SQLFORM(table, **sqlformargs)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/sqlhtml.py", line 1145, in __init__\n    inp = self.widgets.options.widget(field, default)\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/sqlhtml.py", line 270, in widget\n    options = requires[0].options()\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/validators.py", line 559, in options\n    self.build_set()\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/validators.py", line 535, in build_set\n    fields = [table[k] for k in self.fields]\n  File "/Users/sdv/Development/GitHub/SwedishCrown/web2py/gluon/dal.py", line 8817, in __getitem__\n    return ogetattr(self, str(key))\nAttributeError: \'Table\' object has no attribute \'room.house\'\n'
+p315
+s.

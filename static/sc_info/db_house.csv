@@ -1,0 +1,5 @@
+house.id,house.building,house.area_total,house.area_residental,house.area_commercial,house.area_balconies,house.area_stairs,house.area_unequipped,house.apartment_from,house.apartment_till,house.pib_measurement_date
+1,10 литера А,8348.20,7247.50,1100.70,376.70,918.20,763.90,1,128,2011-09-16
+2,12 литера А,8630.00,7836.00,794.00,413.10,1158.60,0.00,1,127,2012-05-31
+3,12 литера Б,4405.00,4013.00,392.00,157.20,626.40,0.00,128,193,2012-05-31
+4,12 литера Е,4195.00,3777.30,417.70,226.40,524.40,0.00,272,331,2013-02-18
